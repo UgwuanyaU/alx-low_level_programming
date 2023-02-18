@@ -25,8 +25,7 @@ int main(void)
 					if (!(ones == '0' && hundreds == '/' &&
 								tens == '0')) /*adds commas and spaces*/
 					{
-						putchar(',');
-						putchar(' ');
+						putchar(', ');
 					}
 				}
 			}

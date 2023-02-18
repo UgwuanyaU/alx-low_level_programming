@@ -23,11 +23,11 @@ int main(void)
 	}
 	else if (last_digit > 5)
 	{
-		printf("%s %d is %d and is greater than 5\n", b_text, n, last_digit);
+		printf("%s %d is %d and is greater than 5\n", b_itext, n, last_digit);
 	}
 	else
 	{
-		printf("%s %d is %d  and is less than 6 and not 0\n", b_text, n, last_digit);
+		printf("%s %d is %d and is less than 6 and not 0\n", b_text, n, last_digit);
 	}
 
 	return (0);

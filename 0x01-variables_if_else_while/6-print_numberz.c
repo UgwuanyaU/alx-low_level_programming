@@ -5,17 +5,15 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-        int c;
+	int i = 48;
 
-        c = 0;
-        while (c < 10) {
-                putchar(c + '0'); 
-                c++;
-        }
-        putchar('\n');
-        return (0);
+	while (i < 58)
+	{
+		putchar(i);
+		i++;
+	}
+	putchar('\n');
+	return (0);
 }
-

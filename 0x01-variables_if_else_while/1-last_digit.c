@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-	int n last_digit;
+	int n, last_digit;
 	char b_text[] = "Last digit of";
 
 	srand(time(0));
@@ -23,7 +23,7 @@ int main(void)
 	}
 	else if (last_digit > 5)
 	{
-		printf("%s %d is %d and is greater than 5\n", b_last, n, last_digit);
+		printf("%s %d is %d and is greater than 5\n", b_text, n, last_digit);
 	}
 	else
 	{

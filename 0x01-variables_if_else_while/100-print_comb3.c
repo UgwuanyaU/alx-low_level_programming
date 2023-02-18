@@ -2,31 +2,29 @@
 
 /**
  * main - Entry point
- * Return: Always 0 (success)
+ *
+ * Return: 0 (success)
+ *
  */
+
 int main(void)
+
 {
 	int ones = '0';
 	int tens = '0';
-	int hundreds = '0';
 
-	for (hundreds = '0'; hundreds <= '0'; hundreds++)
+	for (tens = '0'; tens <= '9'; tens++)/* prints tens digit */
 	{
-		for (tens = '0'; tens <= '0'; tens++)
+		for (ones = '0'; ones <= '9'; ones++)/* prints ones digit */
 		{
-			for (ones = '0'; ones <= '0'; ones++)
+			if (!((ones == tens) || (tens > ones)))/*elimination repitition */
 			{
-				if (!((ones == tens) || (tens == hundreds)) ||
-						(tens > ones) || (hundreds > tens)) /*eliminations repitition*/
+				putchar(tens);
+				putchar(ones);
+				if (!(ones == '9' && tens == '8'))/*adds comma and space */
 				{
-					putchar(hundreds);
-					putchar(tens);
-					putchar(ones);
-					if (!(ones == '0' && hundreds == '/' &&
-								tens == '0')) /*adds commas and spaces*/
-					{
-						putchar(', ');
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}

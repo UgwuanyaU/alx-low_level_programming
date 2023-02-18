@@ -3,37 +3,32 @@
 #include <time.h>
 
 /**
- * main - main function to generate a random number
+ * main - Entry point
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (success
  *
  */
-
 int main(void)
 {
-    int n;
-    int num;
+	int n last_digit;
+	char b_text[] = "Last digit of";
 
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	last_digit = n % 10;
 
-    printf("Last digit of %d is ", n);
+	if (last_digit == 0)
+	{
+		printf("%s %d is %d and is 0\n", b_text, n, last_digit);
+	}
+	else if (last_digit > 5)
+	{
+		printf("%s %d is %d and is greater than 5\n", b_last, n, last_digit);
+	}
+	else
+	{
+		printf("%s %d is %d  and is less than 6 and not 0\n", b_text, n, last_digit);
+	}
 
-    num = n % 10;
-
-    if (num > 5)
-    {
-        printf("%d and is greater than 5\n", num);
-    }
-    else if ((num < 6) && (num != 0))
-    {
-        printf("%d and is less than 6 and not 0\n", num);
-    }
-    else
-    {
-        printf("%d and is 0\n", num);
-    }
-
-    return (0);
+	return (0);
 }
-
